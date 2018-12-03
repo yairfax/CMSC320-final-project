@@ -8,8 +8,7 @@ def loc(nb):
     for c in cells:
     	if c['cell_type'] == 'markdown':
     		for line in c['source']:
-    			for word in line.split(' '):
-    				sum += 1
+    			sum += len(line.split(' '))
 
     return sum
 
